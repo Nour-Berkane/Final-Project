@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/FinalProject.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script   src="https://code.jquery.com/jquery-3.7.1.js"   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="   crossorigin="anonymous"></script>
+    <title>document</title>
+</head>
+<body>
+    <header>
+        <div class="header1">
+            <h4> Free delivery for every order over ---$</h4>
+            <span class="material-symbols-outlined" id="closeicon">
+                close
+            </span>
+        </div>
+        <div class="header2">
+            <div class="logo"><h1>BOX</h1> <span>&</span> <h1>BRUNCH</h1></div>
+            <div class="info">
+            <nav>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Menu</a></li>
+                   <li><a href="#">Free recipes</a></li>
+                   <li><a href="#">Digital gift card</a></li>
+                   <li><a href="#">Contact us</a></li>
+                   <li><a href="#">Subscribe</a></li>
+            </nav>
+            <button class="order-btn">ORDER NOW</button>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section class="section1">
+
+            <div class="about">
+                <h1>Craft Your Perfect Brunch Box</h1>
+                <p>Discover the joy of a <span>brunch box</span> made just for you. Choose from a delicious mix of sweet and savory treats, sauces, and refreshing drinks, then add your personal touch with custom colors, stickers, and wraps. Whether it’s a gift for someone special or a treat for yourself, every box is crafted to bring a little extra joy to your day.</p>
+            </div>
+           
+           <div class="box-presentation">
+           <div class="box-img"><img src="../Images/BOX&BRUNCH-4.png" alt="box"></div>
+           <img class="arrow2" src="../Images/8.png" alt="arrow2">
+           <h2>Cutomize your box</h2>
+           </div>
+           
+
+           
+        </section>
+        <img class="transition" src="../Images/Untitled design-13.png" alt="transition">
+        <section class="section2"> 
+            <h1>BROWSE OUR PRODUCTS</h1>
+            <div class="products">
+               <div class="product-box"><img src="../Images/pexels-polina-tankilevitch-4443497.jpg" ><div class="layer"><h2>Our Juices</h2></div></div>
+               <div class="product-box"><img src="../Images/pexels-cup-of-couple-8471738.jpg" ><div class="layer"><h2>Our Brunch</h2></div></div>
+               <div class="product-box"><img src="../Images/pexels-alena-evseenko-660538512-26898061.jpg" ><div class="layer"><h2>Our Sweets</h2></div></div>
+               <div class="product-box"><img src="../Images/pexels-cottonbro-5899671.jpg" ><div class="layer"><h2>Our Sauces</h2></div></div>
+
+            </div> 
+        </section>
+    </main>
+    <footer style="background-color: rgb(0, 0, 0); color: white; text-align: center;padding:50px;">
+        <p>&copy; 2024 BOX&BRUNCH</p>
+    </footer>
+    <script>
+        $(document).ready(function(){
+        $("#closeicon").on("click", function()
+            {
+                $(".header1").hide();
+            });
+        });
+    </script>
+</body>
+</html>

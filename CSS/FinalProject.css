@@ -1,0 +1,267 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.header1
+{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #219B9D;
+}
+.header1 h4
+{
+    font-weight: 400;
+    font-family: "Roboto";
+    margin-left: 565px;
+    
+}
+.header1 span
+{
+    cursor: pointer;
+}
+.header2 
+{
+    width: 100%;
+    height: 100px;
+    background-color: #4C1F7A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header2 .logo
+{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    color: #FF8000;
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 1.5rem;
+}
+.header2 .logo h1
+{
+    font-family: "League Spartan";
+    margin-top: 5px;
+    letter-spacing: -0.2rem;
+
+}
+.header2 .logo span
+{
+    font-family: "Alex Brush";
+    font-size: 2.6rem;
+    
+}
+.header2 .info
+{
+    width: 70%;
+    display: flex;
+}
+.header2 nav
+{
+    width: 70%;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+}
+
+.header2 nav li
+{
+    list-style: none;
+}
+.header2 nav li a
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #EEEEEE;
+    font-size: 1.3rem;
+    font-family: "Roboto";
+
+}
+.header2 nav li a:hover
+{
+    color:#219B9D;
+    border-bottom:#eeeeee6f 2px solid;
+}
+.header2 .order-btn
+{
+    width: 150px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 80px;
+    background-color: #FF8000;
+    color: #4C1F7A;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: "roboto";
+    font-size: 1rem;
+    border-radius: 25px ;
+    border: 1px solid black;
+}
+.header2 .order-btn:hover
+{
+    color: #219B9D;
+    cursor: pointer;
+}
+main
+{
+    width: 100%;
+    height: auto;
+    background-color: #FF8000;
+  
+}
+main .section1 
+{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 75px;
+}
+main .section1 .about
+{
+    width: 35%;
+    margin-top: 100px;
+}
+main .section1 .about h1
+{
+    font-family: "Roboto";
+    font-size: 5rem;
+    margin-left: 30px;
+}
+main .section1 .about p
+{
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    margin-left: 30px;
+}
+main .section1 .about span
+{
+    color:#219B9D;
+    font-weight: 700;
+    font-style: italic;
+}
+main .box-presentation
+{
+    width: 65%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+main .box-presentation h2
+{
+    color: #4C1F7A;
+    font-size: 1.8rem;
+    font-family: "Roboto";
+    margin-top: 180px;
+    position: relative;
+
+}
+
+main .box-presentation .box-img
+{
+    width: 400px;
+    height: 400px;
+
+}
+main .box-presentation .arrow2
+{
+    width: 200px;
+    height: 200px;
+}
+main .transition
+{
+    width: 100%;
+    height: 400px;
+    margin-bottom: -30px;
+}
+.section2
+{
+    width: 100%;
+    height: 700px;
+    background-color: #4C1F7A;
+}
+.section2 h1
+{
+    color: #FF8000;
+    font-family: "Roboto";
+    font-size: 4rem;
+    padding-left: 335px;
+}
+.section2 .products
+{
+    padding: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.section2 .products .product-box
+{
+    width: 300px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    animation: 10s;
+}
+.section2 .products .product-box:hover
+{
+    transform: scale(1.05);
+}
+
+
+.section2 .products .product-box img
+{
+    width:100%;
+    height: auto;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+.section2 .products .product-box .layer
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+}
+.section2 .products .product-box .layer:hover
+{
+    background-color: rgb(4,9,30,0.7) ;
+}
+.section2 .products .product-box .layer h2
+{
+    width: 100%;
+    height: 100%;
+    color:#FF8000;
+    position: absolute;
+    font-size: 2rem ;
+    margin-top: 70%;
+    margin-left: 20%;
+    opacity: 0;
+    transition: 0.6s;
+}
+.section2 .products .product-box .layer h2:hover
+{
+    opacity: 1;
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+    .info {
+        display: hidden;
+    }
+  }
