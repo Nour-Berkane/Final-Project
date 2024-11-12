@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 .header1
 {
@@ -12,13 +13,13 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
-    background-color: #219B9D;
+    background-color: #e5dada;
 }
 .header1 h4
 {
+    margin-left: 40%;
     font-weight: 400;
     font-family: "Roboto";
-    margin-left: 565px;
     
 }
 .header1 span
@@ -37,22 +38,22 @@
 .header2 .logo
 {
     width: 30%;
+    padding-left: 25px;
     height: 100%;
     display: flex;
     color: #FF8000;
-    margin-top: 25px;
-    margin-left: 25px;
     font-size: 1.5rem;
 }
 .header2 .logo h1
 {
+    margin-top: 25px;
     font-family: "League Spartan";
-    margin-top: 5px;
     letter-spacing: -0.2rem;
 
 }
 .header2 .logo span
 {
+    margin-top: 22px;
     font-family: "Alex Brush";
     font-size: 2.6rem;
     
@@ -61,6 +62,62 @@
 {
     width: 70%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header2 .sidebar-btn span
+{
+    width: 100%;
+    height: 100%;
+    color: white;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-top: 30px;
+    margin-right: 20px;
+    display: none;
+}
+.header2 .sidebar-btn span #menuicon
+{
+    width: 100%;
+    height: 100%;
+}
+.header2 .sidebar
+{ 
+    opacity: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding-bottom: 25px;
+    background-color: #e5dada;
+    position: absolute;
+    right: 4rem;
+    top: 70px;
+    width: 300px;
+}
+.header2 .sidebar #closemenu1
+{
+    cursor: pointer;
+    margin-left: 250px;
+    font-size: 2.5rem;
+    margin-bottom: -30px;
+}
+
+.header2 .sidebar a
+{
+    color: black;
+}
+.header2 .sidebar a:hover
+{
+    color: #FF8000;
+    border-bottom: 2px solid black;
+}
+.header2 .sidebar button
+{
+    margin-left: 20px;
+    width: 250px;
 }
 .header2 nav
 {
@@ -68,14 +125,14 @@
     margin-right: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;   
+    justify-content: space-around;   
 }
 
-.header2 nav li
+li
 {
     list-style: none;
 }
-.header2 nav li a
+li a
 {
     display: flex;
     flex-direction: row;
@@ -87,19 +144,19 @@
     font-family: "Roboto";
 
 }
-.header2 nav li a:hover
+li a:hover
 {
-    color:#219B9D;
+    color:#FF8000;
     border-bottom:#eeeeee6f 2px solid;
 }
-.header2 .order-btn
+.order-btn
 {
     width: 150px;
     height: 50px;
     margin-top: 25px;
-    margin-left: 80px;
+    margin-right: 25px;
     background-color: #FF8000;
-    color: #4C1F7A;
+    color: black;
     letter-spacing: 1px;
     font-weight: 600;
     font-family: "roboto";
@@ -109,32 +166,63 @@
 }
 .header2 .order-btn:hover
 {
-    color: #219B9D;
+    color: #e5dada;
     cursor: pointer;
 }
 main
 {
     width: 100%;
+    display: flex;
+    flex-direction: column;
     height: auto;
-    background-color: #FF8000;
   
 }
 main .section1 
 {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
-    padding-bottom: 75px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FF8000;
 }
 main .section1 .about
 {
-    width: 35%;
+    width: 700px;
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+main .section1 .about .order-btn2
+{
+    width: 150px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 200px;
+    background-color: #FF8000;
+    color: #e5dada;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: "roboto";
+    font-size: 1rem;
+    border-radius: 25px ;
+    border: 2px solid #e5dada;
+    cursor: pointer;
+
+}
+main .section1 .about .order-btn2:hover
+{
+    background-color: #e5dada;
+    color: black;
 }
 main .section1 .about h1
 {
     font-family: "Roboto";
-    font-size: 5rem;
+    text-align: center;
+    font-size: 4rem;
     margin-left: 30px;
+    margin-bottom: 20px;
 }
 main .section1 .about p
 {
@@ -144,49 +232,81 @@ main .section1 .about p
 }
 main .section1 .about span
 {
-    color:#219B9D;
+    color:#e5dada;
     font-weight: 700;
     font-style: italic;
 }
 main .box-presentation
 {
-    width: 65%;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-main .box-presentation h2
-{
-    color: #4C1F7A;
-    font-size: 1.8rem;
-    font-family: "Roboto";
-    margin-top: 180px;
+    width: 600px;
+    margin-top: 100px;
     position: relative;
-
 }
 
-main .box-presentation .box-img
+main .box-presentation .box-img img
 {
-    width: 400px;
-    height: 400px;
+    width:500px;
+    height: auto;
+    animation:linear;
+    animation-name: box-img;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 
 }
-main .box-presentation .arrow2
+@keyframes box-img {
+    0%{transform: translateY(0); scale:1;}
+    25%{transform: translateY(10px); scale:1.04;}
+    50%{transform: translateY(0px); scale: 1.06;}
+    75%{transform: translateY(-10px);scale: 1.04;}
+    100%{transform: translateY(0px);scale: 1;}
+
+}
+main .box-presentation .box-img .img1
 {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -15%;
+    right: 50%;
+}
+main .box-presentation .box-img .img2
+{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 2%;
+    right: 63%;
+}
+main .box-presentation .box-img .img3
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 5%;
+    right: 50%;
+}
+main .box-presentation .box-img .img4
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 11%;
+    right: 35%;
 }
 main .transition
 {
     width: 100%;
     height: 400px;
-    margin-bottom: -30px;
+    margin-bottom: -2px;
 }
 .section2
 {
     width: 100%;
-    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
     background-color: #4C1F7A;
 }
 .section2 h1
@@ -194,27 +314,31 @@ main .transition
     color: #FF8000;
     font-family: "Roboto";
     font-size: 4rem;
-    padding-left: 335px;
+    text-align: center;
 }
 .section2 .products
 {
     padding: 60px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 2rem;
 }
 .section2 .products .product-box
 {
     width: 300px;
-    height: 450px;
+    height: 400px;
+    border: 3px solid #e5dada;
+    border-radius: 50px;
     position: relative;
-    overflow: hidden;
     animation: 10s;
 }
+
 .section2 .products .product-box:hover
 {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 
@@ -222,9 +346,11 @@ main .transition
 {
     width:100%;
     height: auto;
+    margin-top: 15%;
     border-radius: 50px;
     object-fit: cover;
     object-position: center;
+    animation: 10s;
 }
 .section2 .products .product-box .layer
 {
@@ -232,6 +358,10 @@ main .transition
     height: 100%;
     border-radius: 50px;
     background-color: transparent;
+    padding:60% 11.2%;
+    font-size: 3rem;
+    font-weight: 400;
+    color: transparent;
     position: absolute;
     top: 0;
     left: 0;
@@ -239,29 +369,365 @@ main .transition
 }
 .section2 .products .product-box .layer:hover
 {
-    background-color: rgb(4,9,30,0.7) ;
+    background-color: rgb(4,9,30,0.7);
+    color: #e5dada;
 }
-.section2 .products .product-box .layer h2
+main .section3
 {
     width: 100%;
-    height: 100%;
-    color:#FF8000;
-    position: absolute;
-    font-size: 2rem ;
-    margin-top: 70%;
-    margin-left: 20%;
-    opacity: 0;
-    transition: 0.6s;
+    height: auto;
+    background-color: #e5dada;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.section2 .products .product-box .layer h2:hover
+main .section3 h1
 {
-    opacity: 1;
+    font-family: "Roboto";
+    margin-bottom: 50px;
+    font-size: 4rem;
+    color: #4C1F7A;
+    text-align: center;
+    margin-bottom: 20px;
 }
-@media (max-width: 600px) {
-    body {
-        font-size: 16px;
+main .section3 .row
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+main .section3 .row .best-seller-box
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    border: 2px solid #4C1F7A;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .section3 .row .best-seller-box .img-box
+{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .section3 .row .best-seller-box .img-box img
+{
+    width:50%;
+    height: auto;
+    margin-top: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+main .section3 .row .best-seller-box .product-name
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 1.4rem;
+    border-bottom: 1px black solid;
+    margin-bottom: 5px;
+}
+main .section3 .row .best-seller-box .product-info
+{
+    height: 25%;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main .section3 .row .best-seller-box .product-info .material-symbols-outlined
+{
+    cursor: pointer;
+    margin-left: 10px;
+}
+main .section3 .row .best-seller-box .product-info h3
+{
+    margin-left: 50px;
+}
+main .section4
+{
+    width: 100%;
+    height: 800px;
+    padding-left: 30px;
+    background-color: #FF8000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+main .section4 .free-recipes
+{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .section4 .free-recipes h1
+{
+    margin-bottom: 50px;
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Roboto";
+}
+main .section4 .free-recipes p
+{
+    font-size: 2rem;
+    font-family: "roboto";
+}
+main .section4 .free-recipes .free-recipes-btn
+{
+    width: 400px;
+    height: 50px;
+    color: #e5dada;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 3px #e5dada solid;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+main .section4 .free-recipes .free-recipes-btn:hover
+{
+    color: black;
+    background-color: #e5dada;
+}
+
+main .section4 .recipe-img
+{
+    height: auto;
+}
+main .section4 .recipe-img img
+{
+    width: 500px;
+    height: 500px;
+    animation: recipe 5s ease-in-out infinite;
+
+}
+@keyframes recipe {
+    0% {
+        transform: translateY(0px) rotate(0deg) scale(1);
+      }
+      20% {
+        transform: translateY(-12px) rotate(-3deg) scale(1.05);
+      }
+      50% {
+        transform: translateY(0px) rotate(0deg) scale(1);
+      }
+      80% {
+        transform: translateY(12px) rotate(3deg) scale(0.95);
+      }
+      100% {
+        transform: translateY(0px) rotate(0deg) scale(1);
+      }
     }
-    .info {
-        display: hidden;
+main .section5
+{
+    width: 100%;
+    height: auto;
+    background-color: #4C1F7A;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .section5 h1
+{
+    font-family: "Roboto";
+    text-align: center;
+    font-size: 4rem;
+    color: #FF8000;
+}
+main .section5 img
+{
+    width: 500px;
+    height: 500px;
+    animation: card 5s ease-in-out infinite;
+    margin-top: 0px;
+
+}
+@keyframes card {
+    0% {
+        transform: translateY(0px) scale(1);
+      }
+      25% {
+        transform: translateY(-12px) scale(1.05);
+      }
+      50% {
+        transform: translateY(0px) scale(1);
+      }
+      75% {
+        transform: translateY(12px) scale(0.95);
+      }
+      100% {
+        transform: translateY(0px) scale(1);
+      }
     }
+    
+main .section5 .card-btn
+{
+    width: 400px;
+    height: 50px;
+    margin-top: -100px;
+   
+    z-index: 1;
+    color: #e5dada;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 3px #e5dada solid;
+    border-radius: 30px;
+    cursor: pointer;
+}
+main .section5 .card-btn:hover
+{
+    background-color: #FF8000;
+    color: #4C1F7A;
+}
+.contact
+{
+    background-color: #e5dada;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact h1
+{
+    font-size: 4rem;
+    color: #4C1F7A;
+    font-family: "Roboto";
+    margin-top: 50px;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+}
+label
+{
+    position: relative;
+}
+input
+{
+    width: 450px;
+    height: 50px;
+    padding: 0 16px;
+    border: 1px solid black;
+}
+.button1
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #4C1F7A;
+    color: #FF8000;
+    font-size: 1rem;
+    padding: 0 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.contact p
+{
+    font-family: "Roboto";
+    font-size: 1.8rem;
+    font-style: italic;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+
+
+@media screen and (max-width: 480px)
+{
+    main .section1
+    {
+        flex-direction: column;
+    }
+    main .section1 .about h1
+    {
+        font-size: 3rem;
+
+    }
+   
+    
+
+}
+@media screen and (max-width: 780px) {
+    .header2 .info {
+        display: none;
+    }
+    main .section1{
+        flex-direction: column;
+    }
+    .section4{
+        flex-direction: column;
+    }
+    main .section4 .free-recipes
+    {
+        width: 400px;
+    }
+    
+    main .section4 .free-recipes p
+    {
+        font-size: 1.5rem;
+    }
+    main .section4 .recipe-img img
+    {
+        width: 300px;
+        height: 300px;
+    }
+    main .section5 img
+    {
+        width: 400px;
+        height: 400px;
+    }
+    main .section1 .about 
+    {
+        width: 100%;
+    }
+    .section2 .products .product-box .layer
+    {
+        background-color: rgb(4,9,30,0.7);
+        color: #e5dada;
+    }
+    .header1 h4
+    {
+        margin-left: 0px;
+    }
+    
   }
+    @media screen and (max-width: 1080px)
+    {
+        .header2 .info 
+        {
+            display: none;
+        }
+        main .section1 
+        {
+            flex-direction: column;
+        }
+        .header2 .sidebar-btn span 
+        {
+            display: block;
+        }
+        
+    }
+
+ 

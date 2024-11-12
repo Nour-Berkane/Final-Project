@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/FinalProject.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script   src="https://code.jquery.com/jquery-3.7.1.js"   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="   crossorigin="anonymous"></script>
     <title>document</title>
 </head>
@@ -23,57 +25,127 @@
             <div class="logo"><h1>BOX</h1> <span>&</span> <h1>BRUNCH</h1></div>
             <div class="info">
             <nav>
-                   <li><a href="#">About</a></li>
-                   <li><a href="#">Menu</a></li>
-                   <li><a href="#">Free recipes</a></li>
-                   <li><a href="#">Digital gift card</a></li>
-                   <li><a href="#">Contact us</a></li>
-                   <li><a href="#">Subscribe</a></li>
+                   <li><a href="#section1">About</a></li>
+                   <li><a href="#section2">Menu</a></li>
+                   <li><a href="#section4">Free recipes</a></li>
+                   <li><a href="#section5">Digital gift card</a></li>
+                   <li><a href="#contact">Subscribe</a></li>
             </nav>
             <button class="order-btn">ORDER NOW</button>
+            </div>
+            <div class="sidebar-btn"><span id="menuicon" class="material-symbols-outlined">menu</span></div>
+            <div class="sidebar">
+                <span id="closemenu1" class="material-symbols-outlined">close</span>
+                   <li><a href="#section1">About</a></li>
+                   <li><a href="#section2">Menu</a></li>
+                   <li><a href="#section4">Free recipes</a></li>
+                   <li><a href="#section5">Digital gift card</a></li>
+                   <li><a href="#contact">Subscribe</a></li>
+                   <button class="order-btn">ORDER NOW</button>
             </div>
 
         </div>
     </header>
     <main>
-        <section class="section1">
-
-            <div class="about">
-                <h1>Craft Your Perfect Brunch Box</h1>
-                <p>Discover the joy of a <span>brunch box</span> made just for you. Choose from a delicious mix of sweet and savory treats, sauces, and refreshing drinks, then add your personal touch with custom colors, stickers, and wraps. Whether it’s a gift for someone special or a treat for yourself, every box is crafted to bring a little extra joy to your day.</p>
-            </div>
+        <section class="section1" id="section1">
            
            <div class="box-presentation">
-           <div class="box-img"><img src="../Images/BOX&BRUNCH-4.png" alt="box"></div>
-           <img class="arrow2" src="../Images/8.png" alt="arrow2">
-           <h2>Cutomize your box</h2>
+           <div class="box-img"><img src="../Images/Untitled design-28.png">
+           <img class="img1" src="../Images/Untitled design-24.png"> <img class="img2" src="../Images/Untitled design-25.png"> <img class="img3" src="../Images/Untitled design-26.png"> <img class="img4" src="../Images/Untitled design-27.png">
+           </div>
+           </div>
+           <div class="about">
+            <h1 data-aos="zoom-in" data-aos-duration="500" once: true>Craft Your Perfect Brunch Box</h1>
+            <p>Discover the joy of a <span>brunch box</span> made just for you. Choose from a delicious mix of sweet and savory treats, sauces, and refreshing drinks, then add your personal touch with custom colors, stickers, and wraps. Whether it’s a gift for someone special or a treat for yourself, every box is crafted to bring a little extra joy to your day.</p>
+            <button class="order-btn2">ORDER NOW</button>
            </div>
            
 
            
         </section>
         <img class="transition" src="../Images/Untitled design-13.png" alt="transition">
-        <section class="section2"> 
-            <h1>BROWSE OUR PRODUCTS</h1>
+        
+        <section class="section2" id="section2"> 
+            <h1 data-aos="zoom-in" data-aos-duration="500" once: true>BROWSE OUR PRODUCTS</h1>
             <div class="products">
-               <div class="product-box"><img src="../Images/pexels-polina-tankilevitch-4443497.jpg" ><div class="layer"><h2>Our Juices</h2></div></div>
-               <div class="product-box"><img src="../Images/pexels-cup-of-couple-8471738.jpg" ><div class="layer"><h2>Our Brunch</h2></div></div>
-               <div class="product-box"><img src="../Images/pexels-alena-evseenko-660538512-26898061.jpg" ><div class="layer"><h2>Our Sweets</h2></div></div>
-               <div class="product-box"><img src="../Images/pexels-cottonbro-5899671.jpg" ><div class="layer"><h2>Our Sauces</h2></div></div>
+               <div class="product-box"><img src="../Images/Untitled design-29.png" ><div class="layer">Our Juices</div></div>
+               <div class="product-box"><img src="../Images/Untitled design-30.png" ><div class="layer">Our Brunch</div></div>
+               <div class="product-box"><img src="../Images/Untitled design-32.png" ><div class="layer">Our Sweets</div></div>
+               <div class="product-box"><img src="../Images/Untitled design-31.png" ><div class="layer">Our Sauces</div></div>
 
             </div> 
         </section>
+        <img class="transition" src="../Images/Untitled design-42.png" alt="transition">
+
+
+        <section class="section3">
+            <h1 data-aos="zoom-in" data-aos-duration="500" once: true>OUR BEST SELLERS</h1>
+            <div class="row">
+                <div class="best-seller-box"><div class="img-box"><img src="../Images/Untitled design-34.png"></div> <div class="product-name">Chocolate Cake</div> <div class="product-info"><span class="material-symbols-outlined">shopping_bag</span><span class="material-symbols-outlined">favorite</span><h3>5.00$</h3></div></div>
+                <div class="best-seller-box"><div class="img-box"><img src="../Images/Untitled design-35.png"></div> <div class="product-name">Chicken Wrap</div> <div class="product-info"><span class="material-symbols-outlined">shopping_bag</span><span class="material-symbols-outlined">favorite</span><h3>5.00$</h3></div></div>
+                <div class="best-seller-box"><div class="img-box"><img src="../Images/Untitled design-36.png"></div> <div class="product-name">Avocado Toast</div> <div class="product-info"><span class="material-symbols-outlined">shopping_bag</span><span class="material-symbols-outlined">favorite</span><h3>5.00$</h3></div></div>
+                <div class="best-seller-box"><div class="img-box"><img src="../Images/Untitled design-37.png"></div> <div class="product-name">Carrot Juice</div> <div class="product-info"><span class="material-symbols-outlined">shopping_bag</span><span class="material-symbols-outlined">favorite</span><h3>5.00$</h3></div></div>
+                <div class="best-seller-box"><div class="img-box"><img src="../Images/Untitled design-38.png"></div> <div class="product-name">Cherry Juice</div> <div class="product-info"><span class="material-symbols-outlined">shopping_bag</span><span class="material-symbols-outlined">favorite</span><h3>5.00$</h3></div></div>
+                <div class="best-seller-box"><div class="img-box"><img src="../Images/Untitled design-39.png"></div> <div class="product-name">Vanilla Cupcake</div> <div class="product-info"><span class="material-symbols-outlined">shopping_bag</span><span class="material-symbols-outlined">favorite</span><h3>5.00$</h3></div></div>
+                <div class="best-seller-box"><div class="img-box"><img src="../Images/Untitled design-40.png"></div> <div class="product-name">Spring Rolls</div> <div class="product-info"><span class="material-symbols-outlined">shopping_bag</span><span class="material-symbols-outlined">favorite</span><h3>5.00$</h3></div></div>
+                <div class="best-seller-box"><div class="img-box"><img src="../Images/Untitled design-33.png"></div> <div class="product-name">Pancakes</div> <div class="product-info"><span class="material-symbols-outlined">shopping_bag</span><span class="material-symbols-outlined">favorite</span><h3>5.00$</h3></div></div>
+            </div>
+
+        </section>
+        <img class="transition" src="../Images/Untitled design-46.png" alt="transition">
+        
+        <section class="section4" id="section4">
+            <div class="free-recipes">
+                <h1 data-aos="zoom-in" data-aos-duration="500" once: true>FREE RECIPES</h1>
+                <p>Discover our free brunch recipes! From classic pancakes to unique dishes like ricotta-stuffed crepes. Dive in and get cooking — it’s all free!</p>
+                <button class="free-recipes-btn">Browse our free recipes</button>
+            </div>
+            
+            <div class="recipe-img">
+                <img src="../Images/Untitled design-41.png">
+            </div>
+        </section>
+        <img class="transition" src="../Images/Untitled design-47.png" alt="transition">
+        
+        <section class="section5" id="section5">
+            <h1 data-aos="zoom-in" data-aos-duration="500" once: true>DIGITAL GIFT CARD</h1>
+            <img src="../Images/BOX&BRUNCH-5.png">
+            <button class="card-btn">GET YOUR CARD NOW</button>
+
+        </section>
+        <img class="transition" src="../Images/Untitled design-49.png" alt="transition">
+        <section class="contact" id="contact">
+            <h1 data-aos="zoom-in" data-aos-duration="500" once: true>SUBSCRIBE</h1>
+            <p>For news, free recipes, and more offers straight to your mail!</p>
+            <label> 
+              <input type="Email" placeholder="Your Email Here" required>
+              <button class="button1"> SUBMIT</button>
+            </label>
+          </section>
     </main>
-    <footer style="background-color: rgb(0, 0, 0); color: white; text-align: center;padding:50px;">
+    <footer style="background-color: #4C1F7A; color: white; text-align: center;padding:50px;">
         <p>&copy; 2024 BOX&BRUNCH</p>
-    </footer>
+      </footer>
     <script>
         $(document).ready(function(){
         $("#closeicon").on("click", function()
             {
                 $(".header1").hide();
             });
-        });
+        $("#menuicon").on("click", function()
+            {
+                $(".sidebar").css({"opacity":"1"});
+                $("#menuicon").hide()
+            });
+        $("#closemenu1").on("click", function()
+            {
+                $(".sidebar").css({"opacity":"0"});
+                $("#menuicon").show()
+            });
+            
+            ;})
+            AOS.init()
+
     </script>
 </body>
 </html>
